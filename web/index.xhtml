@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="veterinaria dog show"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <p>
+                Bienvenido a la veterinaria dog show
+            </p>
+            <br />
+        <p:button outcome="welcomePrimefaces" value="Primefaces welcome page" />
+        <br />
+        <p:button outcome="/cliente/List" value="Show All Cliente Items"/>
+        <br />
+        <p:button outcome="/detalleFactura/List" value="Show All DetalleFactura Items"/>
+        <br />
+        <p:button outcome="/factura/List" value="Show All Factura Items"/>
+        <br />
+        <p:button outcome="/mascota/List" value="Show All Mascota Items"/>
+        <br />
+        <p:button outcome="/servicio/List" value="Show All Servicio Items"/>
+        <br />
+        <p:button outcome="/tipoDocumento/List" value="Show All TipoDocumento Items"/>
+        </ui:define>
+    </ui:composition>
+    <h:head>
+        <title>Facelet Title</title>
+        <h:outputStylesheet name="css/jsfcrud.css"/>
+    </h:head>
+   
+
+
+
+
+</html>
+
